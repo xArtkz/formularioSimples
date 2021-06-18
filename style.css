@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: orange;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.close-btn {
+    content: "\00d7";
+    position: absolute;
+    left: 290px;
+    bottom: 415px;
+    height: 60px;
+    cursor: pointer;
+} 
+
+.form {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form .box {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 1px 1px #555;
+    border-radius: 25px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: auto;
+    padding: 8px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow:  4px 2px 5px #777;
+}
+
+@keyframes button {
+    0% {
+        transform: rotateY(15deg);
+    }
+    50% {
+        transform: rotateY(35deg);
+    }
+}
+
+.btn:hover {
+    color: black;
+    animation: button 1s;
+}
+
+.space{
+    padding: 5px;
+    border: 2px solid #ccc;
+    transition: 0.2s ease-in-out;
+}
+
+.space:focus {
+    border: 2px solid #555;
+    outline: none;
+    transform: translateX(3%);
+}
+
+
+/* .stick {
+    position: sticky;
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: block;
+    height: 50px;
+}
+
+.teste {
+    text-align: center;
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+} */
